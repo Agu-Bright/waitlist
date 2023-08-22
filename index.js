@@ -12,7 +12,7 @@ const app = express();
 const PORT = process.env.PORT || 7000;
 const DATABASE = process.env.DATABASE;
 app.use(function (req, res, next) {
-  res.header("Access-Control-Allow-Origin", "http://localhost:7000");
+  res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Credentials", true);
   res.header(
     "Access-Control-Allow-Headers",
